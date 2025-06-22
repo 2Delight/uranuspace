@@ -9,6 +9,7 @@ fn main() {
     unsafe {
         getcwd(name.as_mut_ptr(), SIZE);
     }
+
     if name == [0; SIZE] {
         println!("failed to print working directory");
         return;
