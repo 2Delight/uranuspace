@@ -9,23 +9,23 @@ path="lib/src/lib.rs"
 
 [[bin]]
 name="cat"
-path="cat/src/main.rs"
+path="utils/cat/src/main.rs"
 
 [[bin]]
 name="cd"
-path="cd/src/main.rs"
+path="utils/cd/src/main.rs"
 
 [[bin]]
 name="ls"
-path="ls/src/main.rs"
+path="utils/ls/src/main.rs"
 
 [[bin]]
 name="pwd"
-path="pwd/src/main.rs"
+path="utils/pwd/src/main.rs"
 
 [[bin]]
 name="touch"
-path="touch/src/main.rs"
+path="utils/touch/src/main.rs"
 
 [dependencies]
 libc = "0.2.174"
