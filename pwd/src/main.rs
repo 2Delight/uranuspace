@@ -9,6 +9,10 @@ fn main() {
     unsafe {
         getcwd(name.as_mut_ptr(), SIZE);
     }
+    if name == [0; SIZE] {
+        println!("failed to print working directory");
+        return;
+    }
 
     match std::ffi::CStr::from_bytes_until_nul(
         name.iter().map(|&b| b as u8).collect::<Vec<_>>().as_slice(),
