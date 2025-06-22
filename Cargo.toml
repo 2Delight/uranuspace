@@ -1,0 +1,27 @@
+[package]
+name = "uranuspace"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name="cat"
+path="src/cat/main.rs"
+
+[[bin]]
+name="cd"
+path="src/cd/main.rs"
+
+[[bin]]
+name="ls"
+path="src/ls/main.rs"
+
+[[bin]]
+name="pwd"
+path="src/pwd/main.rs"
+
+[[bin]]
+name="touch"
+path="src/touch/main.rs"
+
+[dependencies]
+libc = "0.2.174"
