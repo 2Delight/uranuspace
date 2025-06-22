@@ -5,23 +5,27 @@ edition = "2024"
 
 [[bin]]
 name="cat"
-path="src/cat/main.rs"
+path="cat/src/main.rs"
 
 [[bin]]
 name="cd"
-path="src/cd/main.rs"
+path="cd/src/main.rs"
 
 [[bin]]
 name="ls"
-path="src/ls/main.rs"
+path="ls/src/main.rs"
 
 [[bin]]
 name="pwd"
-path="src/pwd/main.rs"
+path="pwd/src/main.rs"
 
 [[bin]]
 name="touch"
-path="src/touch/main.rs"
+path="touch/src/main.rs"
+
+[lib]
+name="uranuspace"
+path="lib/src/lib.rs"
 
 [dependencies]
 libc = "0.2.174"
