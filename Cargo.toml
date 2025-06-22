@@ -3,6 +3,10 @@ name = "uranuspace"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name="uranuspace"
+path="lib/src/lib.rs"
+
 [[bin]]
 name="cat"
 path="cat/src/main.rs"
@@ -22,10 +26,6 @@ path="pwd/src/main.rs"
 [[bin]]
 name="touch"
 path="touch/src/main.rs"
-
-[lib]
-name="uranuspace"
-path="lib/src/lib.rs"
 
 [dependencies]
 libc = "0.2.174"
